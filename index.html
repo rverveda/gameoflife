@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Conway's Game of Life</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+  <h1>Conway's Game of Life</h1>
+  <h4> - By Ryan Verveda - </h4>
+</head>
+
+<body>
+  <script src="sketch.js"></script>
+  <div id='canvas'>
+    <p1><b><u>Rules for the Game of Life:</b></u><br></br>
+      1. Any live cell with fewer than 2 live neighbours dies, as if by underpopulation.<br></br>
+      2. Any live cell with 2 or 3 live neighbours lives on to the next generation.<br></br>
+      3. Any live cell with more than 3 live neighbours dies, as if by overpopulation.<br></br>
+      4. Any dead cell with exactly 3 live neighbours becomes a live cell, as if by reproduction.
+      <br></br><br></br>Click on the square to change its state. White is alive. Black is dead.   
+    </p1>
+  </div>
+  <p id="generation"></p>
+  <div style="text-align: center;">
+    <input id="runbutton" type="button" value="Run" onclick="runbutton()" style="width:100px;" />
+    <input id="resetbutton" type="button" value="Reset" onclick="resetbutton()" style="width:100px;" />
+  </div>
+  <div style="text-align: center;">
+  <input id="randombutton" type="button" value="Random" onclick="randombutton()" />
+  <input id="gliderbutton" type="button" value="Glider" onclick="gliderbutton()" />
+  <input id="glidergunbutton" type="button" value="Glider Gun" onclick="glidergunbutton()" />
+  <input id="pulsarbutton" type="button" value="Pulsar" onclick="pulsarbutton()" />
+  <input id="diehardbutton" type="button" value="Die Hard" onclick="diehardbutton()" />
+  </div>
+
+</body>
+
+</html>
