@@ -146,6 +146,7 @@ function pulsarbutton() {
 //Draws a Die Hard pattern. A pattern that will die
 function diehardbutton() {
   let runvalue = document.querySelector('#runbutton');
+  resetbutton()
   gameboard[270][310].state = 1; gameboard[280][250].state = 1; gameboard[280][260].state = 1; gameboard[290][260].state = 1; gameboard[290][300].state = 1; gameboard[290][310].state = 1; gameboard[290][320].state = 1;
   gennumb = 0;
   allowed = false;
